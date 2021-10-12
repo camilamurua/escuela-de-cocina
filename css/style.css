@@ -1,0 +1,85 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background: rgb(255, 255, 255);
+    margin: 0em;
+    padding: auto;
+}
+.container {
+    display: grid;
+    margin: 0%;
+    border-color: slateblue;
+    border-style: dotted;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15px 50em 15em 7em;
+    gap: 05px 05px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "menu menu menu"
+      "main main main"
+      "article article article2"
+      "footer footer footer";
+  }
+.main { grid-area: main;
+        padding: 5em;
+        margin: 5em; }
+  
+  .article { 
+      height: 30em;
+      width: 70em;
+      background-color: salmon;
+      grid-area: article; }
+  
+  .article2 { grid-area: article2; }
+  
+  .footer { grid-area: footer; }
+  
+.menu{ 
+      grid-area: menu; 
+      grid-column-start: 1; 
+  grid-column-end: 3; 
+    height: 5em;
+    width: 100vw;
+    font-size: 2em;
+   font-family: 'Belleza', sans-serif;
+   list-style: none;
+   margin: 0%;
+    background-color:rgb(252, 187, 198) ; 
+    border-radius: .5em }
+.logo {
+    width:9vw;
+    display: inline-block;
+    margin-top: .5em;
+    padding-right: .5em;
+    border-radius: .5em;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+}
+.menu li {
+    display: inline-block;
+    border-radius: 1em;
+    padding-top: .5em;
+}
+.menu li a:hover{
+    background-color: salmon;
+    border-radius: .5em;
+}
+p {
+    font-size: 1.5em;
+}
+.carrusel {
+    width: 100%;
+    max-height: 50em;
+    
+    }
+h1 {font-size: 2.3em;
+        font-family: 'Gideon Roman', cursive;
+        text-align: center;
+    }
